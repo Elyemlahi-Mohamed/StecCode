@@ -376,6 +376,10 @@ header .toggle-btn {
 }
 
 @media (max-width: 991px) {
+    .home .container {
+        justify-content: center;
+    }
+
     .home img {
         display: none;
     }
@@ -417,10 +421,8 @@ header .toggle-btn {
 .serv-top {
     background-image: url(../image/github.jpg);
     background-size: cover;
-    background-repeat: center;
     min-height: 600px;
     border-radius: 10px;
-
 }
 
 .serv-top .image img {
@@ -429,6 +431,10 @@ header .toggle-btn {
     border: 2px solid #ccc;
     overflow: hidden;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.serv-top .text {
+    width: 50%;
 }
 
 .serv-top .text h1 {
@@ -510,6 +516,22 @@ header .toggle-btn {
 }
 
 @media (max-width: 767px) {
+    .serv-top {
+        margin-top: 50px;
+    }
+
+    .serv-top .text {
+        width: 100%;
+    }
+    .serv-top .text h1 {
+        font-size: 35px;
+        margin: 20px 0;
+    }
+
+    .serv-top .text p {
+        font-size: 12px;
+    }
+
     .lan-ser .title h1 {
         border: none;
     }
@@ -1082,6 +1104,11 @@ footer .follow .social a:hover {
     transform: scale(1.1);
 }
 
+@media (max-width: 767px) {
+    footer .row {
+        text-align: center;
+    }
+}
 
 /* End footer ------------------------------------- */
 
