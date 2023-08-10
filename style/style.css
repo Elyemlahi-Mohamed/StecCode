@@ -296,10 +296,15 @@ header .toggle-btn {
 .home .container {
     height: 650px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
+@media (min-width: 992) {
+    .home .container {
+        justify-content: space-between;
+    }
+}
 .home .title h2 {
     font-size: 30px;
     font-weight: 900;
@@ -376,10 +381,6 @@ header .toggle-btn {
 }
 
 @media (max-width: 991px) {
-    .home .container {
-        justify-content: center;
-    }
-
     .home img {
         display: none;
     }
@@ -523,6 +524,7 @@ header .toggle-btn {
     .serv-top .text {
         width: 100%;
     }
+
     .serv-top .text h1 {
         font-size: 35px;
         margin: 20px 0;
