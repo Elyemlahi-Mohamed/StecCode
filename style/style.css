@@ -305,6 +305,7 @@ header .toggle-btn {
         justify-content: space-between;
     }
 }
+
 .home .title h2 {
     font-size: 30px;
     font-weight: 900;
@@ -420,14 +421,13 @@ header .toggle-btn {
 /* start services -----------------------------------  */
 
 .serv-top {
-    background-image: url(../image/github.jpg);
-    background-size: cover;
     min-height: 600px;
-    border-radius: 10px;
 }
 
 .serv-top .image img {
     width: 450px;
+    margin: 0 auto;
+    display: block;
     border-radius: 10px;
     border: 2px solid #ccc;
     overflow: hidden;
@@ -438,18 +438,24 @@ header .toggle-btn {
     width: 50%;
 }
 
+@media (max-width: 1299px) {
+    .serv-top .text {
+        width: 100%;
+    }
+}
+
 .serv-top .text h1 {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 900;
-    color: var(--white-color);
+    color: var(--blue);
 }
 
 .serv-top .text p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 60px;
-    color: #b3b2b2;
+    color: #302f2f;
     margin-top: 20px;
 }
 
@@ -521,7 +527,11 @@ header .toggle-btn {
         margin-top: 50px;
     }
 
-    .serv-top .text {
+    .serv-top .image {
+        width: 90%;
+    }
+
+    .serv-top .image img {
         width: 100%;
     }
 
@@ -769,8 +779,16 @@ header .toggle-btn {
     font-size: 20px;
     font-weight: 700;
     padding: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 25px;
     color: var(--black-color);
     text-transform: uppercase;
+    background: var(--second-color);
+    color: white;
+    border-radius: 10px;
 }
 
 
@@ -785,6 +803,7 @@ header .toggle-btn {
 .portfolio .filter-buttons {
     margin: 30px auto;
     width: fit-content;
+    text-align: center;
 }
 
 .portfolio .filter-buttons .btn {
@@ -975,6 +994,15 @@ footer .follow {
     min-width: 285px;
 }
 
+@media (max-width: 767px) {
+    footer .name,
+    footer .serv,
+    footer .cont-us,
+    footer .follow {
+        width: fit-content;
+    }
+}
+
 footer .name {
     display: flex;
     align-items: center;
@@ -1019,6 +1047,7 @@ footer .serv li {
     padding: 10px;
     font-weight: 500;
     margin-left: 40px;
+    width: fit-content;
 }
 
 footer .serv li a {
@@ -1044,6 +1073,7 @@ footer .cont-us li {
     color: #3c3b3b;
     font-size: 13px;
     font-weight: 600;
+    width: fit-content;
 }
 
 footer .cont-us li i {
