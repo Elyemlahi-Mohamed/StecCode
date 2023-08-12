@@ -895,10 +895,18 @@ header .toggle-btn {
     font-weight: 700;
     transition: 0.5s;
     margin-bottom: 45px;
-    transition: all 0.5s linear;
+    transition: all 0.5s;
+    padding: 10px;
+    background-color: var(--blue);
+    border-radius: 10px;
 }
 
-.portfolio .port-content .web-link  {
+.portfolio .port-content h3:hover {
+    color: var(--hover-color);
+    background-color: var(--second-color);
+}
+
+.portfolio .port-content .web-link {
     background-color: var(--white-color);
     border-radius: 50%;
     width: 40px;
@@ -916,10 +924,6 @@ header .toggle-btn {
 .portfolio .port-content .web-link:hover {
     background-color: var(--blue);
     color: var(--white-color);
-}
-
-.portfolio .port-content:hover h3 {
-    color: var(--hover-color);
 }
 
 /* End Portfolio  -------------------------------- */
