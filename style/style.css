@@ -141,6 +141,10 @@ a {
     margin: 0 0 0 50px;
 }
 
+.change-lang a {
+    background-color: var(--blue);
+}
+
 /* start header --------------------------------- */
 header {
     padding-top: 15px;
@@ -446,7 +450,7 @@ header .toggle-btn {
 
 .serv-top .text h1 {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 900;
     color: var(--blue);
 }
@@ -995,6 +999,7 @@ footer .follow {
 }
 
 @media (max-width: 767px) {
+
     footer .name,
     footer .serv,
     footer .cont-us,
