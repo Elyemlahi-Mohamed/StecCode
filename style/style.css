@@ -871,7 +871,7 @@ header .toggle-btn {
     background: rgb(0, 0, 0, 70%);
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
     border-radius: 10px;
@@ -898,7 +898,7 @@ header .toggle-btn {
     transition: all 0.5s linear;
 }
 
-.portfolio .port-content a {
+.portfolio .port-content .web-link  {
     background-color: var(--white-color);
     border-radius: 50%;
     width: 40px;
@@ -913,7 +913,7 @@ header .toggle-btn {
     margin-bottom: 36px;
 }
 
-.portfolio .port-content a:hover {
+.portfolio .port-content .web-link:hover {
     background-color: var(--blue);
     color: var(--white-color);
 }
