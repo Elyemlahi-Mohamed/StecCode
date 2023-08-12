@@ -876,6 +876,8 @@ header .toggle-btn {
     padding: 0 20px;
     border-radius: 10px;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio .portfolio-gallery .port-box:hover .port-content {
