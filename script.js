@@ -58,6 +58,7 @@ toggleBtn.addEventListener('click', () => {
 iconOpen.onclick = () => {
     iconOpen.style.display = "none";
     iconClose.style.display = "block"; 
+    iconClose.style.color = "#ffffff"; 
     
 };
 iconClose.onclick = () => {

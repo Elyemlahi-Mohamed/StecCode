@@ -30,7 +30,7 @@ li {
 }
 
 ::-webkit-scrollbar {
-    width: 17px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -256,7 +256,7 @@ header .toggle-btn {
         position: absolute;
         width: 100%;
         height: 50%;
-        background: #ccc;
+        background: var(--second-color);
         top: 60px;
         left: 50%;
         transform: translate(-50%, 0);
@@ -266,6 +266,7 @@ header .toggle-btn {
     }
 
     header .links .link {
+        color: var(--white-color);
         width: 100px;
         margin: 15px auto;
         border-radius: 10px;
