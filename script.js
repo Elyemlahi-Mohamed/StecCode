@@ -48,11 +48,22 @@ for (let i = 0; i < menuLength; i++) {
 // toggle Menu /////////////////////////////////////
 let toggleBtn = document.querySelector('#toggleBtn');
 let links = document.querySelector('#links');
+let iconOpen = document.getElementById("iconOpen");
+let iconClose = document.getElementById("iconClose");
 
 toggleBtn.addEventListener('click', () => {
     links.classList.toggle('active');
 });
 
+iconOpen.onclick = () => {
+    iconOpen.style.display = "none";
+    iconClose.style.display = "block"; 
+    
+};
+iconClose.onclick = () => {
+    iconOpen.style.display = "block";
+    iconClose.style.display = "none";
+};
 
 
 
