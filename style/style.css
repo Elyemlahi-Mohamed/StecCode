@@ -147,8 +147,8 @@ a {
     padding: 8px 15px;
     border-radius: 7px;
 }
-
-/* start header --------------------------------- */
+ 
+/* start header section--------------------------------- */
 header {
     padding-top: 15px;
     display: flex;
@@ -210,7 +210,7 @@ header .toggle-btn {
 
 @media (max-width: 767px) {
 
-    /* topbar --------------------------------------- */
+    /* topbar section --------------------------------------- */
     .topbar .social-media {
         position: relative;
         left: 0;
@@ -227,7 +227,7 @@ header .toggle-btn {
         padding: 10px;
     }
 
-    /* nav --------------------------------------- */
+    /* nav section --------------------------------------- */
     header {
         display: block;
     }
@@ -294,7 +294,7 @@ header .toggle-btn {
     }
 }
 
-/* start home ------------------------------- */
+/* start home section ------------------------------- */
 
 .home {
     position: relative;
@@ -425,7 +425,7 @@ header .toggle-btn {
 }
 
 
-/* start services -----------------------------------  */
+/* start services section -----------------------------------  */
 
 .serv-top {
     min-height: 600px;
@@ -641,10 +641,10 @@ header .toggle-btn {
     margin: 15px;
 }
 
-/* End services --------------------------------------  */
+/* End services section --------------------------------------  */
 
 
-/* start  skills -------------------------------------- */
+/* start  skills section -------------------------------------- */
 .my-skills {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -799,7 +799,7 @@ header .toggle-btn {
 }
 
 
-/* start Portfolio ccc -------------------------------- */
+/* start Portfolio section -------------------------------- */
 
 .portfolio {
     padding-top: 60px;
@@ -926,14 +926,156 @@ header .toggle-btn {
     color: var(--white-color);
 }
 
-/* End Portfolio  -------------------------------- */
+/* End Portfolio section  -------------------------------- */
+
+/* start contact section ----------------------------------*/
+.contact-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-page .form {
+    background-color: #0075ff;
+    border-radius: 10px;
+    width: 40%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page .form span {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 0;
+    display: block;
+}
+
+.contact-page .form h1 {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 18px 0 0 0;
+}
+
+.contact-page .form .what-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.contact-page .form .whatsapp .what-num {
+    background: #ccc;
+    color: var(--black-color);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    transition: 0.5s
+}
+
+.contact-page .form h2 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.contact-page .form i {
+    background-color: #25d366;
+    color: var(--white-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.contact-page .form h3 {
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.contact-page .form .email {
+    background: #ccc;
+    color: var(--black-color);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.contact-page .form .email:hover,
+.contact-page .form .whatsapp .what-num:hover {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
+.contact-page img {
+    width: 620px;
+}
+
+@media (max-width: 1099px) {
+    .contact-page {
+        flex-direction: column;
+    }
+
+    .contact-page .form {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .contact-page .form h1 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .contact-page .form h3 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .contact-page .form .email {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .contact-page .content {
+        text-align: center;
+    }
+
+    .contact-page img {
+        width: 100%;
+    }
+}
+
+/* End contact section ---------------------------------------*/
 
 
 
 
 
-
-/* Start blogs -------------------------------------- */
+/* Start blogs section -------------------------------------- */
 .coming-soon img {
     position: absolute;
     top: 60%;
@@ -987,11 +1129,11 @@ header .toggle-btn {
 }
 
 
-/* End blogs -------------------------------------- */
+/* End blogs section-------------------------------------- */
 
 
 
-/* start footer ------------------------------------*/
+/* start footer section ------------------------------------*/
 footer {
     width: 100%;
     background-color: #e3e2e2;
@@ -1095,18 +1237,18 @@ footer .cont-us li i {
     margin-right: 10px;
 }
 
-footer .follow .social {
+.social {
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-footer .follow .social a {
-    width: 50px;
-    height: 50px;
+.social a {
+    width: 45px;
+    height: 45px;
     background: red;
     display: flex;
     justify-content: center;
@@ -1116,37 +1258,37 @@ footer .follow .social a {
     transition: 0.5s;
 }
 
-footer .follow .social a:nth-child(1) {
+.social a:nth-child(1) {
     color: var(--white-color);
     background-color: #e1306c;
 }
 
-footer .follow .social a:nth-child(2) {
+.social a:nth-child(2) {
     color: var(--white-color);
     background-color: #1877f2;
 }
 
-footer .follow .social a:nth-child(3) {
+.social a:nth-child(3) {
     color: var(--white-color);
     background-color: #1da1f2;
 }
 
-footer .follow .social a:nth-child(4) {
+.social a:nth-child(4) {
     color: var(--white-color);
     background-color: #333;
 }
 
-footer .follow .social a:nth-child(5) {
+.social a:nth-child(5) {
     color: var(--white-color);
     background-color: #0a66c2;
 }
 
-footer .follow .social a:nth-child(6) {
+.social a:nth-child(6) {
     color: var(--white-color);
     background-color: #e60023;
 }
 
-footer .follow .social a:hover {
+.social a:hover {
     transform: scale(1.1);
 }
 
@@ -1156,12 +1298,12 @@ footer .follow .social a:hover {
     }
 }
 
-/* End footer ------------------------------------- */
+/* End footer  section------------------------------------- */
 
 
 
 
-/* parallax ------------------------------------- */
+/* parallax  section------------------------------------- */
 .scroll-scale {
     opacity: 0;
     transform: scale(.9);
