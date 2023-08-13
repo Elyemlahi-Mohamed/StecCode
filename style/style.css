@@ -255,7 +255,7 @@ header .toggle-btn {
     header .links {
         position: absolute;
         width: 100%;
-        height: 50%;
+        height: 70%;
         background: var(--second-color);
         top: 60px;
         left: 50%;
