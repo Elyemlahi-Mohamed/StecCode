@@ -304,12 +304,6 @@ header .toggle-btn {
 }
 
 /* start home section ------------------------------- */
-
-.home {
-    position: relative;
-    z-index: -2;
-}
-
 .home .container {
     height: 650px;
     display: flex;
@@ -351,7 +345,6 @@ header .toggle-btn {
     font-weight: 600;
     color: #7f7f7f;
 }
-
 
 .home .title a {
     display: block;
