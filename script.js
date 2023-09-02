@@ -91,7 +91,7 @@ scrollTop.forEach((el) => observer.observe(el));
 
 
 // Move to top Btn /////////////////////////////////////
-let toUp = document.querySelector('.btn-up');
+let toUp = document.getElementById("btn-up");
 
 window.onscroll = () => {
     if (scrollY >= 400) {

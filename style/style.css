@@ -409,23 +409,61 @@ header .toggle-btn {
     }
 }
 
-.btn-up {
-    background-color: var(--blue);
-    width: 50px;
-    height: 50px;
+.Btn {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(var(--blue), var(--second-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    border: none;
-    color: white;
+    cursor: pointer;
     position: fixed;
-    right: 15px;
-    bottom: 35px;
-    z-index: 1000;
-    display: none;
+    right: 20px;
+    bottom: 40px;
+    border: none;
 }
 
-.btn-up:hover {
-    background-color: var(--second-color);
+.arrow path {
+    fill: white;
 }
+
+.text-btt {
+    font-size: 0.7em;
+    width: 100px;
+    position: absolute;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -35px;
+    right: -30px;
+    opacity: 0;
+    transition-duration: .7s;
+    z-index: 100;
+}
+
+.Btn:hover .text-btt {
+    opacity: 1;
+    transition-duration: .7s;
+}
+
+.Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 /* start services section -----------------------------------  */
@@ -899,9 +937,10 @@ header .toggle-btn {
     transition: 0.5s;
     margin-bottom: 45px;
     transition: all 0.5s;
-    padding: 10px;
+    padding: 10px 5px;
     background-color: var(--blue);
     border-radius: 10px;
+    text-align: center;
 }
 
 .portfolio .port-content h3:hover {
