@@ -2,9 +2,11 @@
 let youtube = document.getElementById("youtube");
 let facebook = document.getElementById("facebook");
 let instagram = document.getElementById("instagram");
+let linkedin = document.getElementById("linkedin");
 let red = document.getElementById("red");
 let blue = document.getElementById("blue");
 let pink = document.getElementById("pink");
+let blueLin = document.getElementById("blueLin");
 
 youtube.onmouseover = () => {
     youtube.style.backgroundColor = "#FF0000";
@@ -28,6 +30,14 @@ instagram.onmouseover = () => {
     instagram.onmouseleave = () => {
         instagram.style.backgroundColor = "";
         pink.style.color = "";
+    }
+};
+linkedin.onmouseover = () => {
+    linkedin.style.backgroundColor = "#0a66c2";
+    blueLin.style.color = "#ffffff";
+    linkedin.onmouseleave = () => {
+        linkedin.style.backgroundColor = "";
+        blueLin.style.color = "";
     }
 };
 
@@ -57,9 +67,9 @@ toggleBtn.addEventListener('click', () => {
 
 iconOpen.onclick = () => {
     iconOpen.style.display = "none";
-    iconClose.style.display = "block"; 
-    iconClose.style.color = "#ffffff"; 
-    
+    iconClose.style.display = "block";
+    iconClose.style.color = "#ffffff";
+
 };
 iconClose.onclick = () => {
     iconOpen.style.display = "block";
